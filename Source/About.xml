@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>More Mental Breaks</name>
+  <author>nüke</author>
+  <url>
+  </url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <packageId>nuke.MoreMentalBreaks</packageId>
+  <description>This mod adds new mental breaks to the game.
+	
+Extreme mental breaks:
+&gt; Self-Harm: The pawn will cut their wrists and hide in their room.
+    - Medium base chance to occur.
+    - High chance to occur for Masochist trait.
+	
+Major mental breaks:
+&gt; Antisocial: The pawn becomes depressed and roams away from the colony for a while.
+    - High chance to occur.
+	
+Minor mental breaks:
+&gt; Apathy: The pawn becomes lethargic and will often wander around instead of working. They cannot be manually assigned to tasks or drafted while they are apathetic.
+    - High chance to occur.</description>
+</ModMetaData>
