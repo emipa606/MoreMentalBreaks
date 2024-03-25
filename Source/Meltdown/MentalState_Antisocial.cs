@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using RimWorld;
+using Verse;
+using Verse.AI;
 
-namespace Verse.AI;
+namespace MoreMentalBreaks;
 
 public class MentalState_Antisocial : MentalState
 {

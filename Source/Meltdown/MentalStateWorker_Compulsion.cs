@@ -1,4 +1,7 @@
-namespace Verse.AI;
+using Verse;
+using Verse.AI;
+
+namespace MoreMentalBreaks;
 
 public class MentalStateWorker_Compulsion : MentalStateWorker
 {

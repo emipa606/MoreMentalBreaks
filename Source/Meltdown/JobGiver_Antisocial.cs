@@ -1,7 +1,8 @@
+using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace RimWorld;
+namespace MoreMentalBreaks;
 
 public class JobGiver_Antisocial : ThinkNode_JobGiver
 {

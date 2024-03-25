@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace RimWorld;
+namespace MoreMentalBreaks;
 
 public class JobGiver_Compulsion : ThinkNode_JobGiver
 {
@@ -28,15 +29,15 @@ public class JobGiver_Compulsion : ThinkNode_JobGiver
             return null;
         }
 
-        bool Validator(Thing t)
-        {
-            return !t.IsForbidden(pawn) && HaulAIUtility.PawnCanAutomaticallyHaulFast(pawn, t, true);
-        }
-
         var thing = GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map,
             pawn.Map.listerHaulables.ThingsPotentiallyNeedingHauling(), PathEndMode.OnCell,
             TraverseParms.For(pawn), 9999f, Validator);
         return thing != null ? HaulAIUtility.HaulToStorageJob(pawn, thing) : null;
+
+        bool Validator(Thing t)
+        {
+            return !t.IsForbidden(pawn) && HaulAIUtility.PawnCanAutomaticallyHaulFast(pawn, t, true);
+        }
     }
 
     private Thing GetClosestFilth(Pawn pawn, List<Thing> filth)

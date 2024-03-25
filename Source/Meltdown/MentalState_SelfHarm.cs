@@ -1,7 +1,9 @@
 using RimWorld;
 using UnityEngine;
+using Verse;
+using Verse.AI;
 
-namespace Verse.AI;
+namespace MoreMentalBreaks;
 
 public class MentalState_SelfHarm : MentalState
 {

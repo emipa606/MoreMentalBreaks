@@ -1,6 +1,7 @@
 using RimWorld;
+using Verse.AI;
 
-namespace Verse.AI;
+namespace MoreMentalBreaks;
 
 public class MentalState_Compulsion : MentalState
 {
