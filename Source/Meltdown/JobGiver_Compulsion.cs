@@ -17,8 +17,8 @@ public class JobGiver_Compulsion : ThinkNode_JobGiver
         if (Rand.Range(0f, 1f) < 0.5f)
         {
             var filthInHomeArea = pawn.Map.listerFilthInHomeArea.FilthInHomeArea;
-            var closestFilth = GetClosestFilth(pawn, filthInHomeArea);
-            if (CanClean(pawn, closestFilth))
+            var closestFilth = getClosestFilth(pawn, filthInHomeArea);
+            if (canClean(pawn, closestFilth))
             {
                 return new Job(JobDefOf.Clean, closestFilth);
             }
@@ -31,16 +31,16 @@ public class JobGiver_Compulsion : ThinkNode_JobGiver
 
         var thing = GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map,
             pawn.Map.listerHaulables.ThingsPotentiallyNeedingHauling(), PathEndMode.OnCell,
-            TraverseParms.For(pawn), 9999f, Validator);
-        return thing != null ? HaulAIUtility.HaulToStorageJob(pawn, thing) : null;
+            TraverseParms.For(pawn), 9999f, validator);
+        return thing != null ? HaulAIUtility.HaulToStorageJob(pawn, thing, false) : null;
 
-        bool Validator(Thing t)
+        bool validator(Thing t)
         {
             return !t.IsForbidden(pawn) && HaulAIUtility.PawnCanAutomaticallyHaulFast(pawn, t, true);
         }
     }
 
-    private Thing GetClosestFilth(Pawn pawn, List<Thing> filth)
+    private static Thing getClosestFilth(Pawn pawn, List<Thing> filth)
     {
         Thing result = null;
         var num = int.MaxValue;
@@ -59,7 +59,7 @@ public class JobGiver_Compulsion : ThinkNode_JobGiver
         return result;
     }
 
-    private bool CanClean(Pawn pawn, Thing t)
+    private static bool canClean(Pawn pawn, Thing t)
     {
         if (t is Filth filth && pawn.Map.areaManager.Home[filth.Position])
         {

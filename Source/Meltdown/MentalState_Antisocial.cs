@@ -20,11 +20,11 @@ public class MentalState_Antisocial : MentalState
             return;
         }
 
-        var pawns = FindPawns(p);
+        var pawns = findPawns(p);
         var pos = DropCellFinder.RandomDropSpot(p.Map);
-        var num = 50;
+        const int num = 50;
         var num2 = 0;
-        while (!Validate(pos, pawns))
+        while (!validate(pos, pawns))
         {
             num2++;
             pos = DropCellFinder.RandomDropSpot(p.Map);
@@ -57,7 +57,7 @@ public class MentalState_Antisocial : MentalState
         initialized = true;
     }
 
-    private List<Pawn> FindPawns(Pawn localPawn)
+    private static List<Pawn> findPawns(Pawn localPawn)
     {
         var allPawnsSpawned = localPawn.Map.mapPawns.AllPawnsSpawned;
         var list = new List<Pawn>();
@@ -73,7 +73,7 @@ public class MentalState_Antisocial : MentalState
         return list;
     }
 
-    private bool Validate(IntVec3 pos, List<Pawn> pawns)
+    private static bool validate(IntVec3 pos, List<Pawn> pawns)
     {
         foreach (var foundPawn in pawns)
         {

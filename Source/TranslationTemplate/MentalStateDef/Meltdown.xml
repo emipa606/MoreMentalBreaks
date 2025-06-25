@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: avoiding people -->
+  <Antisocial.label>avoiding people</Antisocial.label>
+  <!-- EN: Mental state: Antisocial -->
+  <Antisocial.baseInspectLine>Mental state: Antisocial</Antisocial.baseInspectLine>
+  <!-- EN: {0} is avoiding [PAWN_possessive] fellow colonists for a while. -->
+  <Antisocial.beginLetter>{0} is avoiding [PAWN_possessive] fellow colonists for a while.</Antisocial.beginLetter>
+  <!-- EN: antisocial -->
+  <Antisocial.beginLetterLabel>antisocial</Antisocial.beginLetterLabel>
+  <!-- EN: {0} has stopped being antisocial. -->
+  <Antisocial.recoveryMessage>{0} has stopped being antisocial.</Antisocial.recoveryMessage>
+  <!-- EN: slacking off -->
+  <Apathy.label>slacking off</Apathy.label>
+  <!-- EN: Mental state: Apathy -->
+  <Apathy.baseInspectLine>Mental state: Apathy</Apathy.baseInspectLine>
+  <!-- EN: {0} has become apathetic and is less likely to do [PAWN_possessive] assigned work. -->
+  <Apathy.beginLetter>{0} has become apathetic and is less likely to do [PAWN_possessive] assigned work.</Apathy.beginLetter>
+  <!-- EN: apathy -->
+  <Apathy.beginLetterLabel>apathy</Apathy.beginLetterLabel>
+  <!-- EN: {0} has stopped being apathetic. -->
+  <Apathy.recoveryMessage>{0} has stopped being apathetic.</Apathy.recoveryMessage>
+  <!-- EN: self-harming -->
+  <SelfHarm.label>self-harming</SelfHarm.label>
+  <!-- EN: Mental state: Self-harming -->
+  <SelfHarm.baseInspectLine>Mental state: Self-harming</SelfHarm.baseInspectLine>
+  <!-- EN: {0} has slit [PAWN_possessive] wrists and is sulking in [PAWN_possessive] room. -->
+  <SelfHarm.beginLetter>{0} has slit [PAWN_possessive] wrists and is sulking in [PAWN_possessive] room.</SelfHarm.beginLetter>
+  <!-- EN: self-harm -->
+  <SelfHarm.beginLetterLabel>self-harm</SelfHarm.beginLetterLabel>
+  <!-- EN: {0} has stopped self-harming. -->
+  <SelfHarm.recoveryMessage>{0} has stopped self-harming.</SelfHarm.recoveryMessage>
+</LanguageData>
