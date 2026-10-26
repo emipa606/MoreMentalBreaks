@@ -7,11 +7,6 @@ namespace MoreMentalBreaks;
 
 public class JobGiver_Compulsion : ThinkNode_JobGiver
 {
-    protected bool IgnoreForbid(Pawn pawn)
-    {
-        return pawn.InMentalState;
-    }
-
     protected override Job TryGiveJob(Pawn pawn)
     {
         if (Rand.Range(0f, 1f) < 0.5f)

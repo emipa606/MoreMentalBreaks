@@ -75,12 +75,9 @@ public class MentalState_Antisocial : MentalState
 
     private static bool validate(IntVec3 pos, List<Pawn> pawns)
     {
-        foreach (var foundPawn in pawns)
+        if (pawns.Any(pawn => IntVec3Utility.ManhattanDistanceFlat(pos, pawn.PositionHeld) < 50))
         {
-            if (IntVec3Utility.ManhattanDistanceFlat(pos, foundPawn.PositionHeld) < 50)
-            {
-                return false;
-            }
+            return false;
         }
 
         return !Find.CurrentMap.areaManager.Home[pos];

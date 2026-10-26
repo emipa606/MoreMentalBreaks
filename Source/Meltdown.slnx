@@ -3,4 +3,19 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="Meltdown/MoreMentalBreaks.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThinkTreeDefs/">
+    <File Path="../1.7/Defs/ThinkTreeDefs/SubTrees_Misc.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/TaleDefs/">
+    <File Path="../1.7/Defs/TaleDefs/Tales_SinglePawn.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/MentalStateDefs/">
+    <File Path="../1.7/Defs/MentalStateDefs/Meltdown.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
 </Solution>
